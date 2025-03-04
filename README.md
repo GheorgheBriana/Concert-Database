@@ -4,12 +4,18 @@ This project is an implementation of a relational database for managing concerts
 
 ## 🚀 Features
 - **Ticket Management**: Purchase and manage event tickets.
-- **Artist & Genre Management**: Store and retrieve artist details and their associated music genres.
-- **Automated Message Logging**: Logs important database operations.
+- **Ticket Management**: Purchase and register tickets for users.
+- **Artist & Genre Management**: Associate artists with their respective music genres.
+- **Concert & Venue Management**: Store details about concerts and their locations.
+- **Available Seats Tracking**: Automatically update available seats when tickets are purchased.
+- **Activity Logging**: Automatically log key database actions (ticket insertions, schema changes, errors).
 - **Triggers**:
   - **Statement-Level Trigger**: Logs ticket insertions.
-  - **Row-Level Trigger**: Updates available seats when tickets are purchased.
-  - **DDL Trigger**: Monitors schema modifications (`DROP`/`ALTER` on the `LOCATIE` table).
+  - **Row-Level Trigger**: Decreases available seats when a ticket is purchased.
+  - **DDL Trigger**: Monitors changes to the database schema.
+- **PL/SQL Stored Procedures & Functions**: Manage business logic through stored procedures and functions.
+- **PL/SQL Package**: Organizes stored procedures, functions, and triggers into a structured package.
+- **Complex SQL Queries**: Includes JOINs, aggregations, subqueries, and set operators (UNION, INTERSECT, MINUS).
 
 ## 📁 Project Structure
 The repository contains the following files:
