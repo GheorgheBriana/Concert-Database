@@ -20,6 +20,8 @@ END;
 
 -- To test the trigger, insert a ticket into the BILET table.
 INSERT INTO BILET (ID_CONCERT, ID_UTILIZATOR, ID_TIP_BILET) VALUES (5, 8, 1);
+
+
 --------------------------------------------------------------
 -- This trigger is an LMD trigger at the row level.
 -- It is activated after each insertion of a row in the BILET table.
@@ -108,6 +110,8 @@ INSERT INTO BILET (ID_CONCERT, ID_UTILIZATOR, ID_TIP_BILET) VALUES (8, 2, 2); --
 INSERT INTO BILET (ID_CONCERT, ID_UTILIZATOR, ID_TIP_BILET) VALUES (8, 3, 3); -- Standard for Ana
 INSERT INTO BILET (ID_CONCERT, ID_UTILIZATOR, ID_TIP_BILET) VALUES (8, 6, 3); -- Standard for Alex
 INSERT INTO BILET (ID_CONCERT, ID_UTILIZATOR, ID_TIP_BILET) VALUES (8, 5, 5); -- Student ticket for Mihai -- error
+
+
 --------------------------------------------------------------
 -- This trigger is a DDL trigger at the schema level.
 -- It is activated after each DROP or ALTER operation on any object in the current schema.
